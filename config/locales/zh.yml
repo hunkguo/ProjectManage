@@ -1,0 +1,31 @@
+zh:
+  helpers:
+    submit:
+      create: "创建 %{model}"
+      submit: "保存 %{model}"
+      update: "更新 %{model}"
+  activerecord:
+    models:
+      user: '用户'
+    attributes:
+      user:
+        password: '密码'
+        password_confirmation: '确认密码'
+        username: '用户名' 
+        dept_ids: '部门'
+        role_ids: '角色'
+    errors:
+      models:
+        user:
+          attributes:
+            password: 
+              blank: '不能为空'
+              too_short: '必须大于6位小于20位'
+            password_confirmation:
+              blank: '请再次输入一次'
+              confirmation: '两次输入不同，请再次输入'
+            username: 
+              blank: '用户名不能为空'
+              taken: '用户名已存在'
+
+

@@ -1,0 +1,26 @@
+<div class="row-fluid">
+  <form  class="form-horizontal">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">查看用户</legend>
+      </div>
+
+        <div class="control-group">
+          <!-- Text input-->
+            <label class="control-label" for="master_name">用户名</label>
+            <div class="controls">
+              <label class="inline" for="inputKey" style="margin-top: 6px"><%= @user.username %></label>
+            </div>
+        </div>
+
+    <div class="control-group">
+          <!-- Button -->
+          <div class="controls">
+          <%= link_to '返回', users_path, :class => "btn btn-success"%>
+
+          </div>
+        </div>
+
+    </fieldset>
+    </form>
+          </div><!--/row-->

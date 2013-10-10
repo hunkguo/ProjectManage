@@ -1,0 +1,7 @@
+/* 
+*= require bootstrap-theme.min
+*= require bootstrap.min
+*/
+@import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";

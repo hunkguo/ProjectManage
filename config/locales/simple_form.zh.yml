@@ -1,0 +1,121 @@
+zh:  
+  simple_form:  
+    labels:  
+      user:  
+        name: '用户名' 
+        truename: '用户真实姓名' 
+        password: '密码'
+        password_confirmation: '确认密码'
+        sex: '性别'
+        dept: '部门'
+      dept:
+        deptname: '部门名称'
+        deptdesc: '部门描述'
+      group:
+        groupname: '用户组名称'
+        groupinfo: '用户组描述'
+      action_column:
+        actioncolumnname: '动作分类名称'
+      action:
+        actionname: '动作名称'
+        action_column: '动作分类'
+        action: '动作字符串'
+        viewmode: '是否可见'
+    placeholders:  
+      user:  
+        name: '请输入用户名' 
+        truename: '请输入用户姓名'
+        password: '请输入密码'
+        password_confirmation: '请再次输入密码'
+        sex: '请选择性别'
+        dept: '请输入部门'
+        position: '请输入职务'
+        position_desc: '请输入职务说明'
+        office_phone: '如: 010-84839601'
+        mobile: '如13903771111'
+        email: '请输入email'
+      dept:
+        deptname: '请输入部门名称'
+        deptdesc: '请输入部门描述'
+      group:
+        groupname: '请输入用户组名称'
+        groupinfo: '请输入用户组描述'
+      action_column:
+        actioncolumnname: '请输入动作分类名称'
+      action:
+        actionname: '请输入动作名称'
+        action_column: '请选择动作分类'
+        action: '请输入动作字符串'
+        viewmode: '请输入是否可见'
+  activerecord:
+    models:
+      user: '管理员'
+      dept: '部门'
+      group: '用户组'
+      action_column: '动作分类'
+      action: '动作'
+    attributes:
+      user:
+        password: '密码'
+        password_confirmation: ''
+        name: '用户名' 
+        truename: '用户真实姓名' 
+        sex: '性别'
+        dept: '部门'
+        position: '职务'
+        position_desc: '职务说明'
+        office_phone: '固定电话'
+        mobile: '手机'
+        email: 'Email'
+      dept:
+        deptname: '部门名称'
+        deptdesc: '部门描述'
+      group:
+        groupname: '用户组名称'
+        groupinfo: '用户组描述'
+      action_column:
+        Actioncolumnname: '动作分类名称'
+      action:
+        actionname: '动作名称'
+        action_column: '动作分类'
+        action: '动作字符串'
+        viewmode: '是否可见'
+    errors:
+      models:
+        user:
+          attributes:
+            password: 
+              blank: '密码不能为空'
+            password_confirmation:
+              blank: '请再次输入一次密码'
+              confirmation: '两次密码不同，请再次输入'
+            truename:   
+              blank: '姓名不能为空'
+            name: 
+              blank: '用户名不能为空'
+              taken: '用户名已存在'
+            sex:    
+              blank: '性别不能为空'
+            position:    
+              blank: '职位不能为空'
+            dept:    
+              blank: '部门不能为空'
+        dept:
+          attributes:
+            deptname: '部门名称不能为空'
+            deptdesc: '部门描述不能为空'
+        group:
+          attributes:
+            groupname: '部门名称不能为空'
+            groupinfo: '部门描述不能为空'
+        action_column:
+          attributes:
+            actioncolumnname: '动作分类名称不能为空'
+        action:
+          attributes:
+            actionname: '动作名称不能为空'
+            action_column: '动作分类不能为空'
+            action: '动作字符串不能为空'
+            viewmode: '是否可见不能为空'
+
+

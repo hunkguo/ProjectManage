@@ -1,0 +1,71 @@
+
+
+      <% if @role.errors.any? %>
+        <div class="span8 offset2 alert">
+          <strong>警告!</strong> 发生错误。
+          <ul>
+          <% @role.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+
+<div class="row-fluid">
+<%= form_for @role , :url => { :action => :create_role } ,:html => {:class => "form-horizontal"} do |f| %>
+
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">创建新角色</legend>
+      </div>
+
+        <div class="control-group">
+          <!-- Text input-->
+        <span class="control-label"><%= f.label :rolename%></span>
+        <div class="controls form-inline">
+            <%= f.text_field :rolename ,:class=>"input-xlarge focused" %>
+            <span id="ApplicationName_notice" class="label label-inverse"></span>
+        </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Text input-->
+        <span class="control-label"><%= f.label :password%></span>
+        <div class="controls form-inline">
+            <%= f.password_field :password ,:class=>"input-xlarge focused" %>
+        </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Text input-->
+        <span class="control-label"><%= f.label :password_confirmation%></span>
+        <div class="controls form-inline">
+            <%= f.password_field :password_confirmation ,:class=>"input-xlarge focused" %>
+        </div>
+        </div>
+
+
+
+        <div class="control-group">
+          <!-- Text input-->
+        <span class="control-label"><%= f.label :dept_ids%></span>
+        <div class="controls form-inline">
+            <%= f.select :dept_ids, Dept.all.collect {|x| [x.name, x.id]},prompt: '选择部门' %>
+        </div>
+        </div>
+
+    <div class="control-group">
+          <!-- Button -->
+          <div class="controls">
+          <%= f.submit :class => 'btn btn-primary'%>
+          <%= link_to '返回', roles_path, :class => "btn btn-success"%>
+
+          </div>
+        </div>
+
+    </fieldset>
+<% end %>
+          </div><!--/row-->
+
+

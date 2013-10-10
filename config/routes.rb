@@ -1,5 +1,11 @@
 PM05::Application.routes.draw do
 
+  get "roles/index"
+  get "roles/new"
+  get "roles/create"
+  get "roles/edit"
+  get "roles/update"
+  get "roles/destroy"
   get "home/index"
 
   scope "/member" do
